@@ -51,6 +51,14 @@
 
 
 
+<script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<script src="libs/d3-3.3.8/d3.min.js"></script>
+<script src="libs/dagre-0.4.0/dagre-d3.min.js"></script>
+<link href="libs/mermaid-0.3.0/dist/mermaid.css" rel="stylesheet" />
+<script src="libs/mermaid-0.3.0/dist/mermaid.js"></script>
+<link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+<script src="libs/chromatography-0.1/chromatography.js"></script>
+<script src="libs/DiagrammeR-binding-1.0.5/DiagrammeR.js"></script>
 
 
 <style type="text/css">
@@ -130,7 +138,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">A Minimal Book Example</a></li>
+<li><a href="./">Analisis Data Sekunder</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Pengantar</a></li>
@@ -162,7 +170,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="8.2.2" data-path="manajemen-data-1.html"><a href="manajemen-data-1.html#select"><i class="fa fa-check"></i><b>8.2.2</b> select</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="visualisasi-data.html"><a href="visualisasi-data.html"><i class="fa fa-check"></i><b>9</b> Visualisasi Data</a></li>
+<li class="chapter" data-level="9" data-path="visualisasi-data.html"><a href="visualisasi-data.html"><i class="fa fa-check"></i><b>9</b> Visualisasi Data</a>
+<ul>
+<li class="chapter" data-level="9.0.1" data-path="visualisasi-data.html"><a href="visualisasi-data.html#pendahuluan"><i class="fa fa-check"></i><b>9.0.1</b> Pendahuluan</a></li>
+</ul></li>
 <li class="chapter" data-level="10" data-path="uji-perbedaan.html"><a href="uji-perbedaan.html"><i class="fa fa-check"></i><b>10</b> Uji Perbedaan</a></li>
 <li class="chapter" data-level="11" data-path="korelasi-dan-regresi.html"><a href="korelasi-dan-regresi.html"><i class="fa fa-check"></i><b>11</b> Korelasi dan Regresi</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -198,6 +209,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="select" class="section level3" number="8.2.2">
 <h3><span class="header-section-number">8.2.2</span> select</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="manajemen-data-1.html#cb2-1"></a><span class="kw">library</span>(DiagrammeR)</span>
+<span id="cb2-2"><a href="manajemen-data-1.html#cb2-2"></a><span class="kw">mermaid</span>(<span class="st">&quot;</span></span>
+<span id="cb2-3"><a href="manajemen-data-1.html#cb2-3"></a><span class="st">graph LR</span></span>
+<span id="cb2-4"><a href="manajemen-data-1.html#cb2-4"></a><span class="st">  A--&gt;B</span></span>
+<span id="cb2-5"><a href="manajemen-data-1.html#cb2-5"></a><span class="st">  A--&gt;C</span></span>
+<span id="cb2-6"><a href="manajemen-data-1.html#cb2-6"></a><span class="st">  C--&gt;E</span></span>
+<span id="cb2-7"><a href="manajemen-data-1.html#cb2-7"></a><span class="st">  B--&gt;D</span></span>
+<span id="cb2-8"><a href="manajemen-data-1.html#cb2-8"></a><span class="st">  C--&gt;D</span></span>
+<span id="cb2-9"><a href="manajemen-data-1.html#cb2-9"></a><span class="st">  D--&gt;F</span></span>
+<span id="cb2-10"><a href="manajemen-data-1.html#cb2-10"></a><span class="st">  E--&gt;F</span></span>
+<span id="cb2-11"><a href="manajemen-data-1.html#cb2-11"></a><span class="st">&quot;</span>)</span></code></pre></div>
+<div id="htmlwidget-d14f71e575b1fc6ad6de" style="width:672px;height:480px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d14f71e575b1fc6ad6de">{"x":{"diagram":"\ngraph LR\n  A-->B\n  A-->C\n  C-->E\n  B-->D\n  C-->D\n  D-->F\n  E-->F\n"},"evals":[],"jsHooks":[]}</script>
 
 </div>
 </div>

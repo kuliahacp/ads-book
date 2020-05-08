@@ -1,3 +1,8 @@
+---
+output:
+  html_document: default
+  pdf_document: default
+---
 # Manajemen Data
 
 ## Menggunakan R
@@ -6,10 +11,16 @@
 ### filter
 ### select
 
-```mermaid
-graph TD
-A[Hard] -->|Text| B(Round)
-B --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
+```{r}
+library(DiagrammeR)
+mermaid("
+graph LR
+  A-->B
+  A-->C
+  C-->E
+  B-->D
+  C-->D
+  D-->F
+  E-->F
+")
 ```
